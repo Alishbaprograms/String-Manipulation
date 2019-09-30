@@ -1,0 +1,20 @@
+DECLARE mystr = STRING
+DECLARE reverse = STRING
+DECLARE mychar = CHAR
+DECLARE count = INTEGER
+
+mystr=""
+reverse=""
+mychar""
+count=0
+
+OUTPUT "Enter the value you wish to reverse"
+INPUT mystr
+
+For count =Length(mystr) to 1 Step-1
+    mychar=MID(mystr,count)
+    reverse = reverse + mychar
+
+Next
+
+OUTPUT reverse
