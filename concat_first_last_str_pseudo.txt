@@ -1,0 +1,33 @@
+DECLARE mystr1 : STRING
+DECLARE mystr2 : STRING
+DECLARE length : INTEGER
+DECLARE space : INTEGER
+DECLARE firstword : STRING
+DECLARE secondword : STRING
+ 
+mystr1 = ""
+mystr2 = ""
+length = 0
+space = 0
+firstword = ""
+secondword = ""
+
+OUTPUT "Enter the string: "
+INPUT mystr1
+
+OUTPUT "Enter second string: "
+INPUT mystr2
+
+space = LOCATE(mystr1, " ")
+firstword= LEFT(mystr1, space - 1)
+OUTPUT "Your first string is: " & firstword
+
+space = LOCATE(mystr2, " ")
+length = LENGTH(mystr2)
+seconword = RIGHT(mystr2, length - space)
+
+OUTPUT "Your second word is: " & secondword
+
+OUTPUT "Your final string is: " & firstword & secondword 
+
+ 
