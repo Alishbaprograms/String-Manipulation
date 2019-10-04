@@ -1,0 +1,40 @@
+DECLARE entstr : STRING
+DECLARE rawchar1 : CHAR
+DECLARE rawchar2 : CHAR
+DECLARE finalstr : STRING
+DECLARE count : INTEGER
+DECLARE mychar : CHAR
+
+entstr = ""
+rawchar1 = ''
+rawchar2 = ''
+finalstr = ""
+count = 0
+mychar = ''
+
+OUTPUT Enter you string: 
+INPUT enstr
+
+OUTPUT  Enter the character you want to remove:
+INPUT rawchar1
+
+OUTPUT Enter the character you want to replace it with:
+INPUT rawchar2
+
+For count = 1 to LENGTH(entstr)
+    mychar=MID(entstr,count,1)
+    IF mychar<> rawchar1 THEN
+        finalstr =  finalstr & mychar
+    ELSE
+        mychr = rawchar2
+        finalstr = finalstr& mychar
+    END IF
+
+NEXT
+OUTPUT 	FINAL  STRING IS:
+CONSOLE.READKEY()
+
+    
+
+
+ 
