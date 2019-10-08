@@ -1,0 +1,32 @@
+DECLARE s1 : STRING
+DECLARE nextchar : STRING
+DECLARE count : INTEGER
+DECLARE alphset : string
+DECLARE ISPANGRAM : BOOLEAN
+s1 = ""
+nextchar = ""count = 0
+alphaset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+Ispangram = True
+
+OUTPUT "Enter your String: "
+INPUT s1
+
+s1 = UCASE(s1)
+
+
+
+For count = 1 to LENGTH (alphaset)
+    nextchar = MID (alphaset, count, 1)
+    If
+    LOCATE(s1,nextchar)=0
+     then
+         ISPANGRAM=FALSE
+     Exit for
+    End for
+   IF 
+   ISPANGRAM = true
+       Then 
+         OUTPUT "THIS IS A PANGRAM."
+   ELSE
+       OUTPUT "THIS IS NOT A PANGRAM"
+Endif
