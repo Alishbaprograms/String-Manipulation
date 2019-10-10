@@ -9,8 +9,6 @@
         Dim sumofB As Integer
         Dim nextcharA As String
         Dim nextcharB As String
-        Dim finalA As String
-        Dim finalB As String
         Dim ascii As Integer
         Dim ascii2 As Integer
         rawstrA = ""
@@ -21,8 +19,6 @@
         sumofB = 0
         nextcharA = ""
         nextcharB = ""
-        finalA = 0
-        finalB = ""
         ascii = 0
         ascii2 = 0
 
