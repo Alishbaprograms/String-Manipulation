@@ -1,0 +1,49 @@
+DECLARE rawstrA :STRING
+DECLARE rawstrB :STRING
+DECLARE count1 :INTEGER
+DECLARE count2 :INTEGER
+DECLARE sumofA :INTEGER
+DECLARE sumofB :INTEGER
+DECLARE nextcharA : STRING
+DECLARE nextcharB: STRING
+DECLARE ascii : INTEGER
+DECLARE ascii2 :INTEGER
+
+rawstr A= ""
+rawstrB=""
+count1 = 0
+count2 = 0
+sumofA =0
+sumofB = 0
+nextcharA =""
+nextcharB =""
+ascii=0
+ascii2=0
+
+OUTPUT "Enter you first string: "
+INPUT rawstrA
+
+OUTPUT "Enter your second string: "
+INPUT rawstrB
+
+For count2 = 1 to LENGTH(rawstrA)
+    nextcharA = MID(rawstrA,count1,1)
+    ascii2 = ASC(nextcharA)
+    sumofA = sumofA = ascii2
+
+NEXT
+For count2 = 1 to LENGTH(rawstrB)
+    nextcharB = MID(rawstrB ,count2, 1)
+    ascii=ASC(nextcharB)
+    sumofB = sumofB + ascii
+
+NEXT
+IF  sumofA=sumofB then
+       OUTPUT " This is an anagram"
+Else
+        OUTPUT " This is not ananagram"
+END IF
+OUTPUT "Ascii of string is: " & sumofA
+OUTPUT "Ascii of secondstring is: " & sumofB
+console.READKEY
+
